@@ -1,51 +1,63 @@
-// export default function Skills() {
-//   const skills = [
-//     "Docker",
-//     "Kubernetes",
-//     "GitHub Actions",
-//     "Next.js",
-//     "React",
-//     "Linux",
-//   ];
-
-//   return (
-//     <section id="skills" className="section section-light rounded-3xl">
-//       <h2 className="text-3xl font-semibold mb-12">Tech Stack</h2>
-
-//       <div className="grid md:grid-cols-3 gap-8">
-//         {skills.map((skill) => (
-//           <div
-//             key={skill}
-//             className="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition"
-//           >
-//             <h3 className="font-semibold text-lg mb-2">{skill}</h3>
-//             <p className="text-slate-500 text-sm">
-//               Professional experience working with {skill}.
-//             </p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
+// ⚠️ When you add a skill here, also update DevMode.tsx → skills command
 import Image from "next/image";
 
 export default function Skills() {
   const skills = [
+    // 1. Jenkins — currently learning
+    {
+      name: "Jenkins",
+      image: "/skills/jenkins.svg",
+      desc: "Building and managing CI/CD pipelines with Jenkins automation server.",
+    },
+
+    // 2. Terraform — currently learning
+    {
+      name: "Terraform",
+      image: "/skills/terraform.svg",
+      desc: "Provisioning and managing cloud infrastructure as code.",
+    },
+
+    // 3. SQL — currently learning
+    {
+      name: "SQL",
+      image: "/skills/sql.svg",
+      desc: "Designing and querying relational databases.",
+    },
+
     {
       name: "Docker",
       image: "/skills/docker.png",
-      desc: "Containerizing applications for scalable deployments.",
+      desc: "Containerizing applications for scalable, reproducible deployments.",
     },
     {
       name: "Kubernetes",
       image: "/skills/kubernetes.png",
-      desc: "Orchestrating containerized workloads efficiently.",
+      desc: "Orchestrating containerized workloads with high availability.",
     },
     {
       name: "GitHub Actions",
       image: "/skills/github.png",
-      desc: "Automating CI/CD pipelines seamlessly.",
+      desc: "Automating CI/CD pipelines — build, test, deploy seamlessly.",
+    },
+    {
+      name: "Linux",
+      image: "/skills/linux.png",
+      desc: "Managing infrastructure, system programming & server environments.",
+    },
+    {
+      name: "Ansible",
+      image: "/skills/ansible.svg",
+      desc: "Automating server configuration and infrastructure management.",
+    },
+    {
+      name: "Bash Scripting",
+      image: "/skills/bash.svg",
+      desc: "Writing automation scripts for system administration tasks.",
+    },
+    {
+      name: "AWS",
+      image: "/skills/aws.svg",
+      desc: "Cloud infrastructure: EC2, S3, IAM, RDS, VPC and more.",
     },
     {
       name: "Next.js",
@@ -55,26 +67,19 @@ export default function Skills() {
     {
       name: "React",
       image: "/skills/react.png",
-      desc: "Creating interactive user interfaces.",
-    },
-    {
-      name: "Linux",
-      image: "/skills/linux.png",
-      desc: "Managing infrastructure & server environments.",
+      desc: "Creating interactive, component-based user interfaces.",
     },
   ];
 
   return (
     <section id="skills" className="section bg-white">
       <h2 className="text-3xl font-semibold mb-16 text-center">Tech Stack</h2>
-
       <div className="grid md:grid-cols-3 gap-10">
         {skills.map((skill) => (
           <div
             key={skill.name}
             className="group p-10 bg-white/70 backdrop-blur-sm rounded-3xl border border-slate-200 hover:-translate-y-2 transition duration-300"
           >
-            {/* Logo */}
             <div className="mb-6">
               <Image
                 src={skill.image}
@@ -84,11 +89,9 @@ export default function Skills() {
                 className="object-contain"
               />
             </div>
-
             <h3 className="text-xl font-semibold mb-3 group-hover:text-indigo-600 transition">
               {skill.name}
             </h3>
-
             <p className="text-slate-500 text-sm leading-relaxed">
               {skill.desc}
             </p>

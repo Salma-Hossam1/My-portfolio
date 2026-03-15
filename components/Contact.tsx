@@ -1,37 +1,4 @@
-// export default function Contact() {
-//   return (
-//     <section id="contact" className="py-20 text-center">
-//       <h3 className="text-2xl font-bold text-emerald-400 mb-6">Contact Me</h3>
 
-//       <div className="flex justify-center gap-6 flex-wrap">
-//         <a
-//           href="https://github.com/Salma-Hossam1"
-//           target="_blank"
-//           className="border border-emerald-400 px-5 py-2 rounded-lg hover:bg-emerald-400 hover:text-black transition"
-//         >
-//           GitHub
-//         </a>
-
-//         <a
-//           href="https://www.linkedin.com/in/salma-hossam--/"
-//           target="_blank"
-//           className="border border-emerald-400 px-5 py-2 rounded-lg hover:bg-emerald-400 hover:text-black transition"
-//         >
-//           LinkedIn
-//         </a>
-
-//         <a
-//           href="/MyCv.pdf"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="bg-emerald-500 text-black px-5 py-2 rounded-lg hover:scale-105 transition"
-//         >
-//           Download CV
-//         </a>
-//       </div>
-//     </section>
-//   );
-// }
 
 "use client";
 import { Github, Linkedin, FileText, Mail } from "lucide-react";
