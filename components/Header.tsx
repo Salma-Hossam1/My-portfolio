@@ -1,4 +1,3 @@
-
 "use client";
 export default function Header() {
   return (
@@ -20,6 +19,10 @@ export default function Header() {
           <a href="#projects" className="hover:text-indigo-600 transition">
             Projects
           </a>
+          <a href="#services" className="hover:text-indigo-600 transition">
+            Services
+          </a>
+
           <a href="#devmode" className="hover:text-indigo-600 transition">
             Dev Mode
           </a>
@@ -31,4 +34,3 @@ export default function Header() {
     </header>
   );
 }
- 

@@ -43,6 +43,7 @@ import Projects from "@/components/Projects";
 import DevMode from "@/components/DevMode";
 import Contact from "@/components/Contact";
 import { useEffect } from "react";
+import Services from "@/components/Services";
  
 export default function Home() {
   useEffect(() => {
@@ -60,6 +61,9 @@ export default function Home() {
       </SectionWrapper>
       <SectionWrapper>
         <Projects />
+      </SectionWrapper>
+      <SectionWrapper>
+        <Services />
       </SectionWrapper>
       <SectionWrapper>
         <DevMode />
